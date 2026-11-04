@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">iQDevTech — Tecnología que crece contigo</title>
+  <desc id="desc">Imagen para compartir: desarrollo de software y asesoría tecnológica para empresas en Colombia.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102a52"/>
+      <stop offset="1" stop-color="#0a1c3d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="#fff" opacity="0.04"/>
+  <circle cx="980" cy="130" r="180" fill="#2bb6ff" opacity="0.14"/>
+  <circle cx="110" cy="540" r="120" fill="#2bb673" opacity="0.10"/>
+  <rect x="90" y="120" width="88" height="88" rx="22" fill="#102a52"/>
+  <text x="134" y="178" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="#fff">iQ</text>
+  <text x="90" y="300" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#fff">iQDevTech</text>
+  <text x="90" y="368" font-family="Arial, sans-serif" font-size="40" fill="#cfe1ff">Desarrollo de software y asesoría tecnológica</text>
+  <text x="90" y="428" font-family="Arial, sans-serif" font-size="40" fill="#cfe1ff">para empresas en Colombia.</text>
+  <text x="90" y="540" font-family="Arial, sans-serif" font-size="28" fill="#ffd529">Tecnología que crece contigo.</text>
+</svg>
