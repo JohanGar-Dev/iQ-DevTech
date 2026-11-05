@@ -1,8 +1,8 @@
 # iQDevTech
 
-### Tecnología que crece contigo
+### Innovación que conecta
 
-Sitio institucional de **iQDevTech**, una empresa colombiana de desarrollo de software y asesoría tecnológica. Presenta nuestra forma de trabajar, servicios, contacto y productos propios en una experiencia web rápida y adaptable.
+Sitio institucional de **iQDevTech**, un estudio colombiano de desarrollo de software y soluciones tecnológicas. Presenta nuestra forma de trabajar, servicios, contacto y productos propios en una experiencia web rápida y adaptable.
 
 [Ver el repositorio en GitHub](https://github.com/JohanGar-Dev/iQ-DevTech)
 
@@ -16,7 +16,7 @@ Este sitio está construido como una aplicación web estática: utiliza HTML, CS
 
 - Página principal con presentación de iQDevTech, servicios y forma de trabajo.
 - Navegación, pie de página y acceso flotante a WhatsApp compartidos entre páginas.
-- Página de producto para **SERESTA**, presentado de forma transparente como prototipo en desarrollo, no disponible para producción.
+- Página de producto para **SERESTA**, un asistente de citas para negocios: su versión local ya cuenta con una primera versión funcional en validación; Business sigue como propuesta futura, sin integración oficial activa con Meta.
 - Páginas de aviso legal, privacidad, cookies y términos y condiciones.
 - Diseño adaptable, enlaces para saltar al contenido y respeto por la preferencia de movimiento reducido.
 - Metadatos para buscadores y redes sociales, datos estructurados, `robots.txt` y sitemap XML.

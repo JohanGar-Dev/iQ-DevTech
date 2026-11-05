@@ -33,7 +33,7 @@ class IQFooter extends HTMLElement {
         <div class="site-footer__main">
           <div class="site-footer__brand">
             <a class="wordmark wordmark--footer" href="/" aria-label="iQDevTech, inicio"><span class="wordmark__iq">iQ</span><span>DevTech</span><i></i></a>
-            <p>Software y asesoramiento con mentalidad de equipo. Construimos contigo para que tu tecnología también pueda crecer.</p>
+            <p>Estudio de desarrollo de software y soluciones tecnológicas. Creamos productos propios y colaboramos como socios de tu equipo.</p>
           </div>
           <div class="site-footer__column">
             <span class="site-footer__label">EXPLORA</span>
