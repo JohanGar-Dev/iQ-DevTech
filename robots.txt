@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iqdevtech.bond/sitemap.xml
+Sitemap: https://www.iqfeedex.bond/sitemap.xml

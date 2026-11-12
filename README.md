@@ -104,4 +104,4 @@ No se necesita un paso de build: Cloudflare sirve directamente los archivos est�
 
 ### Dominio propio
 
-Las URLs canónicas, metadatos de redes sociales y sitemap están configurados para `https://iqdevtech.bond`. En Cloudflare Pages, agrega el dominio personalizado al proyecto cuando su estado esté activo y confirma que HTTPS esté disponible antes de compartir la URL pública. La política de privacidad tendrá rutas directas en `/privacy` y `/politica-de-privacidad`.
+Las URLs canónicas, metadatos de redes sociales y sitemap están configurados para `https://www.iqfeedex.bond`. Ambos dominios, con y sin `www`, pueden servir el sitio; esta configuración no establece una redirección entre ellos. La política de privacidad está disponible en `/legal/privacidad`, con las rutas alternativas `/privacy` y `/politica-de-privacidad`.

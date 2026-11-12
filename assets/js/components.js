@@ -34,6 +34,7 @@ class IQFooter extends HTMLElement {
           <div class="site-footer__brand">
             <a class="wordmark wordmark--footer" href="/" aria-label="iQFeeDex, inicio"><span class="wordmark__iq">iQ</span><span>FeeDex</span><i></i></a>
             <p>Estudio de desarrollo de software y soluciones tecnológicas. Creamos productos propios y colaboramos como socios de tu equipo.</p>
+            <p>iQFeeDex es la marca de Johan Felipe Pabon Garcia, persona natural.</p>
           </div>
           <div class="site-footer__column">
             <span class="site-footer__label">EXPLORA</span>
