@@ -1,12 +1,12 @@
-# iQDevTech
+# iQFeeDex
 
 ### Innovación que conecta
 
-Sitio institucional de **iQDevTech**, un estudio colombiano de desarrollo de software y soluciones tecnológicas. Presenta nuestra forma de trabajar, servicios, contacto y productos propios en una experiencia web rápida y adaptable.
+Sitio institucional de **iQFeeDex**, un estudio colombiano de desarrollo de software y soluciones tecnológicas. Presenta nuestra forma de trabajar, servicios, contacto y productos propios en una experiencia web rápida y adaptable.
 
 [Ver el repositorio en GitHub](https://github.com/JohanGar-Dev/iQ-DevTech)
 
-![iQDevTech — desarrollo de software y asesoría tecnológica](./og-image.svg)
+![iQFeeDex — desarrollo de software y asesoría tecnológica](./og-image.svg)
 
 ## Sobre el proyecto
 
@@ -14,13 +14,16 @@ Este sitio está construido como una aplicación web estática: utiliza HTML, CS
 
 ### Incluye
 
-- Página principal con presentación de iQDevTech, servicios y forma de trabajo.
+- Página principal con presentación de iQFeeDex, servicios y forma de trabajo.
 - Navegación, pie de página y acceso flotante a WhatsApp compartidos entre páginas.
-- Página de producto para **SERESTA**, un asistente de citas para negocios: su versión local ya cuenta con una primera versión funcional en validación; Business sigue como propuesta futura, sin integración oficial activa con Meta.
+- Página de producto para **SERESTA**, un asistente de citas por WhatsApp en desarrollo. El prototipo local usa datos sintéticos; no procesa datos reales de clientes en producción.
 - Páginas de aviso legal, privacidad, cookies y términos y condiciones.
-- Diseño adaptable, enlaces para saltar al contenido y respeto por la preferencia de movimiento reducido.
+- Política de privacidad disponible en `/privacy` y `/politica-de-privacidad`, además de su ruta de archivo `/legal/privacidad.html`.
+- Portada organizada en secciones de pantalla completa: rueda, teclado y gestos táctiles avanzan con ajuste obligatorio entre escenas; las páginas de producto y legales conservan el desplazamiento normal.
+- Diseño adaptable, enlaces para saltar al contenido y respeto por la preferencia de movimiento reducido, que desactiva el ajuste animado.
 - Metadatos para buscadores y redes sociales, datos estructurados, `robots.txt` y sitemap XML.
 - Cabeceras HTTP configuradas para Cloudflare Pages en `_headers`.
+- Capa de profundidad (`assets/css/depth.css` y `assets/js/depth.js`): globo de nodos 3D en canvas, cubos y ventanas flotantes en CSS 3D, inclinación de tarjetas con foco de luz, iconografía SVG, barra de progreso y cursor suave. Es puramente decorativa (`aria-hidden`), se carga sobre `styles.css` sin modificarlo, no cambia el texto ni la estructura del HTML y respeta `prefers-reduced-motion`.
 
 El sitio no tiene inicio de sesión ni formularios propios. Tampoco instala cookies propias; al seguir enlaces a servicios externos, como WhatsApp, se aplican las políticas de esos servicios.
 
@@ -38,9 +41,11 @@ El sitio no tiene inicio de sesión ni formularios propios. Tampoco instala cook
 .
 ├── assets/
 │   ├── css/
+│   │   ├── depth.css
 │   │   └── styles.css
 │   └── js/
 │       ├── components.js
+│       ├── depth.js
 │       └── main.js
 ├── legal/
 │   ├── aviso-legal.html
@@ -49,6 +54,7 @@ El sitio no tiene inicio de sesión ni formularios propios. Tampoco instala cook
 │   └── terminos.html
 ├── productos/
 │   └── seresta.html
+├── _redirects
 ├── _headers
 ├── favicon.svg
 ├── index.html
@@ -74,7 +80,7 @@ El repositorio remoto ya está configurado como `origin`. Para crear el primer c
 ```bash
 git status
 git add .
-git commit -m "Initial iQDevTech website"
+git commit -m "Initial iQFeeDex website"
 git push -u origin main
 ```
 
@@ -96,6 +102,6 @@ git push
 
 No se necesita un paso de build: Cloudflare sirve directamente los archivos estáticos del proyecto.
 
-### Antes de usar un dominio propio
+### Dominio propio
 
-Las URLs canónicas y de redes sociales usan actualmente `https://www.iqdevtech.com` como dominio previsto. Antes de publicar bajo otro dominio, actualiza las URLs de dominio en `index.html`, `productos/seresta.html`, `robots.txt` y `sitemap.xml`, incluidos los datos estructurados.
+Las URLs canónicas, metadatos de redes sociales y sitemap están configurados para `https://iqdevtech.bond`. En Cloudflare Pages, agrega el dominio personalizado al proyecto cuando su estado esté activo y confirma que HTTPS esté disponible antes de compartir la URL pública. La política de privacidad tendrá rutas directas en `/privacy` y `/politica-de-privacidad`.

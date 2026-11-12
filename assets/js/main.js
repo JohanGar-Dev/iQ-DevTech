@@ -1,4 +1,5 @@
 import "./components.js";
+import { initDepth } from "./depth.js";
 
 const initializeSite = () => {
   document.querySelectorAll("[data-current-year]").forEach((element) => {
@@ -7,6 +8,12 @@ const initializeSite = () => {
 
   const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  try {
+    initDepth({ finePointer, reducedMotion });
+  } catch (error) {
+    console.warn("Depth layer unavailable", error);
+  }
 
   if (finePointer && !reducedMotion) {
     const heroArt = document.querySelector(".hero-art");
@@ -114,6 +121,55 @@ const initializeSite = () => {
     revealItems.forEach((item) => observer.observe(item));
   } else {
     revealItems.forEach((item) => item.classList.add("is-visible"));
+  }
+
+  const storyScenes = document.querySelectorAll("[data-story-scene]");
+  if (
+    storyScenes.length > 1 &&
+    !reducedMotion &&
+    "IntersectionObserver" in window
+  ) {
+    document.documentElement.classList.add("story-scroll-ready");
+    storyScenes[0].classList.add("is-current");
+
+    const activateNearestScene = () => {
+      const viewportCenter = window.innerHeight / 2;
+      let nearestScene;
+      let nearestDistance = Infinity;
+
+      storyScenes.forEach((scene) => {
+        const bounds = scene.getBoundingClientRect();
+        const distance = viewportCenter < bounds.top
+          ? bounds.top - viewportCenter
+          : viewportCenter > bounds.bottom
+            ? viewportCenter - bounds.bottom
+            : 0;
+
+        if (distance < nearestDistance) {
+          nearestDistance = distance;
+          nearestScene = scene;
+        }
+      });
+
+      storyScenes.forEach((scene) => {
+        scene.classList.toggle("is-current", scene === nearestScene);
+      });
+    };
+
+    let storyFrame = 0;
+    const scheduleSceneActivation = () => {
+      if (storyFrame) return;
+      storyFrame = window.requestAnimationFrame(() => {
+        activateNearestScene();
+        storyFrame = 0;
+      });
+    };
+
+    const storyObserver = new IntersectionObserver(scheduleSceneActivation);
+
+    storyScenes.forEach((scene) => storyObserver.observe(scene));
+    window.addEventListener("scroll", scheduleSceneActivation, { passive: true });
+    activateNearestScene();
   }
 };
 

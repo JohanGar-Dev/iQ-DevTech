@@ -1,6 +1,6 @@
 const legalLinks = [
   { href: "/legal/aviso-legal.html", label: "Aviso legal" },
-  { href: "/legal/privacidad.html", label: "Privacidad" },
+  { href: "/privacy", label: "Privacidad" },
   { href: "/legal/cookies.html", label: "Cookies" },
   { href: "/legal/terminos.html", label: "Términos de uso" },
 ];
@@ -10,7 +10,7 @@ class IQHeader extends HTMLElement {
     this.innerHTML = `
       <header class="site-header">
         <div class="site-header__inner">
-          <a class="wordmark" href="/" aria-label="iQDevTech, inicio"><span class="wordmark__iq">iQ</span><span>DevTech</span><i></i></a>
+          <a class="wordmark" href="/" aria-label="iQFeeDex, inicio"><span class="wordmark__iq">iQ</span><span>FeeDex</span><i></i></a>
           <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
             <span class="menu-toggle__label">Menú</span><span class="menu-toggle__icon" aria-hidden="true"><i></i><i></i></span>
           </button>
@@ -32,7 +32,7 @@ class IQFooter extends HTMLElement {
       <footer class="site-footer">
         <div class="site-footer__main">
           <div class="site-footer__brand">
-            <a class="wordmark wordmark--footer" href="/" aria-label="iQDevTech, inicio"><span class="wordmark__iq">iQ</span><span>DevTech</span><i></i></a>
+            <a class="wordmark wordmark--footer" href="/" aria-label="iQFeeDex, inicio"><span class="wordmark__iq">iQ</span><span>FeeDex</span><i></i></a>
             <p>Estudio de desarrollo de software y soluciones tecnológicas. Creamos productos propios y colaboramos como socios de tu equipo.</p>
           </div>
           <div class="site-footer__column">
@@ -45,12 +45,12 @@ class IQFooter extends HTMLElement {
           <div class="site-footer__column">
             <span class="site-footer__label">CONTACTO</span>
             <a href="mailto:Jfelipepabong@gmail.com">Jfelipepabong@gmail.com</a>
-            <a href="tel:+573227792998">+57 322 779 2998</a>
+            <a href="tel:+573207792998">+57 320 779 2998</a>
             <span>Colombia · Trabajo remoto</span>
           </div>
         </div>
         <div class="site-footer__bottom">
-          <span>© <span data-current-year></span> iQDevTech. Hecho con intención.</span>
+          <span>© <span data-current-year></span> iQFeeDex. Hecho con intención.</span>
           <nav class="site-footer__legal" aria-label="Información legal">
             ${legalLinks.map(({ href, label }) => `<a href="${href}">${label}</a>`).join("")}
           </nav>
@@ -58,7 +58,7 @@ class IQFooter extends HTMLElement {
         </div>
       </footer>`;
     this.insertAdjacentHTML("beforeend", `
-      <a class="whatsapp-float" href="https://wa.me/573227792998?text=Hola%2C%20quiero%20hablar%20sobre%20un%20proyecto%20de%20software."
+      <a class="whatsapp-float" href="https://wa.me/573207792998?text=Hola%2C%20quiero%20hablar%20sobre%20un%20proyecto%20de%20software."
         target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp; abre una nueva pestaña" title="Escríbenos por WhatsApp">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M20.1 11.8a8.1 8.1 0 0 1-12 7l-4 .9 1.1-3.8a8.1 8.1 0 1 1 14.9-4.1Z"></path>

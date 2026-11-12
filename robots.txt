@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# TODO: actualizar la URL del sitemap cuando el dominio de producción esté conectado
-Sitemap: https://www.iqdevtech.com/sitemap.xml
+Sitemap: https://iqdevtech.bond/sitemap.xml
