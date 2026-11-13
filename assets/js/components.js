@@ -1,8 +1,8 @@
 const legalLinks = [
-  { href: "/legal/aviso-legal.html", label: "Aviso legal" },
-  { href: "/privacy", label: "Privacidad" },
-  { href: "/legal/cookies.html", label: "Cookies" },
-  { href: "/legal/terminos.html", label: "Términos de uso" },
+  { href: "/legal/aviso-legal", label: "Aviso legal" },
+  { href: "/legal/privacidad", label: "Privacidad" },
+  { href: "/legal/cookies", label: "Cookies" },
+  { href: "/legal/terminos", label: "Términos de uso" },
 ];
 
 class IQHeader extends HTMLElement {
@@ -17,7 +17,7 @@ class IQHeader extends HTMLElement {
           <nav class="site-nav" id="primary-navigation" aria-label="Navegación principal">
             <a href="/#enfoque">Nosotros</a>
             <a href="/#servicios">Qué hacemos</a>
-            <a href="/productos/seresta.html">Productos</a>
+            <a href="/productos/seresta">Productos</a>
             <a href="/#contacto">Contacto</a>
             <a class="site-nav__cta" href="/#contacto">Hablemos <span aria-hidden="true">↗</span></a>
           </nav>
@@ -40,7 +40,7 @@ class IQFooter extends HTMLElement {
             <span class="site-footer__label">EXPLORA</span>
             <a href="/#enfoque">Nuestra manera</a>
             <a href="/#servicios">Servicios</a>
-            <a href="/productos/seresta.html">SERESTA</a>
+            <a href="/productos/seresta">SERESTA</a>
             <a href="/#contacto">Hablemos</a>
           </div>
           <div class="site-footer__column">

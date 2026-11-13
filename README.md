@@ -2,7 +2,7 @@
 
 ### Innovación que conecta
 
-Sitio institucional de **iQFeeDex**, un estudio colombiano de desarrollo de software y soluciones tecnológicas. Presenta nuestra forma de trabajar, servicios, contacto y productos propios en una experiencia web rápida y adaptable.
+Sitio institucional de **iQFeeDex**, un estudio de desarrollo de software y asesoría digital para proyectos en Bucaramanga y de forma remota. Presenta nuestra forma de trabajar, servicios, contacto y productos propios.
 
 [Ver el repositorio en GitHub](https://github.com/JohanGar-Dev/iQ-DevTech)
 
